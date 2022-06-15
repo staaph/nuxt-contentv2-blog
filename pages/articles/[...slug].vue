@@ -1,6 +1,9 @@
 <script setup lang="ts">
-const { data: article } = await useAsyncData('article', () =>
-  queryContent(`/articles`).findOne()
+const {
+  params: { slug },
+} = useRoute();
+const { data: article } = await useAsyncData(`article-${slug}`, () =>
+  queryContent(`/articles/${slug}`).findOne()
 );
 </script>
 
