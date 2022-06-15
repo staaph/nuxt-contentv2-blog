@@ -1,15 +1,11 @@
 <script setup lang="ts">
-const {
-  params: { slug },
-} = useRoute();
-
-const { data: article } = await useAsyncData(`article-${slug}`, () =>
-  queryContent(`/articles/${slug}`).findOne()
+const { data: article } = await useAsyncData('article', () =>
+  queryContent(`/articles`).findOne()
 );
 </script>
 
 <template>
   <div class="">
-    <p>{{ article.title }}</p>
+    <ContentRenderer :value="article" />
   </div>
 </template>

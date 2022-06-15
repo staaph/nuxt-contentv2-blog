@@ -5,12 +5,8 @@ const { data: articles } = await useAsyncData('articles', () =>
 </script>
 
 <template>
-  <div class="">
-    <div
-      class="flex flex-col items-center"
-      v-for="(article, idx) in articles"
-      :key="idx"
-    >
+  <div>
+    <div v-for="article in articles" :key="article._id">
       <NuxtLink :to="article._path">{{ article.title }}</NuxtLink>
     </div>
   </div>
