@@ -10,7 +10,7 @@ const props = defineProps({
   </main>
 </template>
 
-<style scoled>
+<style scoped>
 .card {
   padding: 0.5rem;
   background-color: #d1d5db;
@@ -18,5 +18,6 @@ const props = defineProps({
   line-height: 1.75rem;
   font-weight: 600;
   border-radius: 0.25rem;
+  width: 50%;
 }
 </style>
