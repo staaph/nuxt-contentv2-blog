@@ -8,7 +8,8 @@ const { data: article } = await useAsyncData(`article-${slug}`, () =>
 </script>
 
 <template>
-  <div class="">
-    <Card :article="article" />
+  <div class="content">
+    <h1 class="title" v-text="article.title" />
+    <ContentRenderer :value="article" class="content" />
   </div>
 </template>
