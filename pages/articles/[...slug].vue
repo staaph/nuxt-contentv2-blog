@@ -5,6 +5,9 @@ const {
 const { data: article } = await useAsyncData(`article-${slug}`, () =>
   queryContent(`/articles/${slug}`).findOne()
 );
+useHead({
+  title: article.value.title,
+});
 </script>
 
 <template>
