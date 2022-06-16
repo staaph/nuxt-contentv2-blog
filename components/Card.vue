@@ -12,6 +12,11 @@ const props = defineProps({
 
 <style scoled>
 .card {
-  @apply bg-gray-300 rounded p-2 text-lg font-semibold;
+  padding: 0.5rem;
+  background-color: #d1d5db;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  border-radius: 0.25rem;
 }
 </style>

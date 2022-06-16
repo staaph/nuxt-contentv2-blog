@@ -1,13 +1,27 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 .title {
-  @apply flex justify-center w-full font-bold text-3xl mb-10;
+  display: flex;
+  margin-bottom: 2.5rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  justify-content: center;
+  width: 100%;
 }
 .content {
-  @apply m-12;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-top: 3rem;
 }
 pre {
-  @apply bg-gray-800 rounded p-4;
+  padding: 1rem;
+  background-color: #1f2937;
+  border-radius: 0.25rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
 }
