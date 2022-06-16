@@ -1,4 +1,6 @@
-export default config = {
+const config = {
   bg_dark: '#000000',
   bg_light: '#fff',
 };
+
+export default config;
