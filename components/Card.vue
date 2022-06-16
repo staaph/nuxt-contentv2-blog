@@ -12,12 +12,6 @@ const props = defineProps({
 
 <style scoped>
 .card {
-  padding: 0.5rem;
-  background-color: #d1d5db;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  font-weight: 600;
-  border-radius: 0.25rem;
-  width: 50%;
+  @apply p-2 text-xl leading-7 font-semibold rounded;
 }
 </style>

@@ -8,13 +8,24 @@ useHead({
 </script>
 
 <template>
-  <main class="content">
+  <main class="content flex flex-col justify-center">
     <h1 class="title">Discover fascinating stories</h1>
-    <div v-for="article in articles" :key="article._id" class="">
-      <NuxtLink :to="article._path" class="link"
-        ><Card>{{ article.title }}</Card>
-      </NuxtLink>
-    </div>
+    <section class="flex flex-col gap-5" v-if="articles">
+      <div v-for="(article, key) in articles" :key="article.id">
+        <NuxtLink :to="article._path">
+          <div class="flex flex-row gap-x-3">
+            <div
+              v-text="'0' + (key + 1)"
+              class="font-bold text-3xl text-gray-400"
+            />
+            <div class="flex flex-col dark:text-white">
+              <span v-text="article.title" class="font-semibold" />
+              <div class="flex flex-row gap-x-2 font-light"></div>
+            </div>
+          </div>
+        </NuxtLink>
+      </div>
+    </section>
   </main>
 </template>
 

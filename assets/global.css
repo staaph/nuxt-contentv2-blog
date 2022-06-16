@@ -1,26 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
-  margin: 0;
-  padding: 0;
+  @apply text-black dark:text-white p-0 m-0;
 }
 html {
-  height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
+  @apply dark:bg-black;
 }
 
 .title {
-  display: flex;
-  margin-bottom: 2.5rem;
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-  font-weight: 700;
-  justify-content: center;
-  width: 100%;
+  @apply flex w-full mb-20 text-xl md:text-3xl leading-9 font-bold justify-center;
 }
 .content {
-  margin-left: 5rem;
-  margin-right: 5rem;
-  margin-top: 3rem;
-  line-height: 2;
+  @apply mx-20 mt-12 leading-8;
 }
 pre {
   padding: 1rem;
@@ -35,4 +29,9 @@ a {
 
 a:visited {
   color: black;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
 }
