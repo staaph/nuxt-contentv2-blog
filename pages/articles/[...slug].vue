@@ -25,8 +25,8 @@ const { data: article } = await useAsyncData(`article-${slug}`, () =>
 .main {
   display: flex;
   flex-direction: column;
-  align-items: start;
-  justify-content: start;
+  align-items: flex-start;
+  justify-content: flex-start;
   max-width: 100vw;
   margin: 0 10%;
 }

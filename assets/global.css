@@ -4,7 +4,8 @@
 }
 html {
   max-width: 100vw;
-  padding: 10px;
+  padding: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .content {
@@ -27,11 +28,18 @@ a:visited {
 .content {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .title {
   font-weight: 700;
-  font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 50px;
+}
+
+pre {
+  background-color: #1e293b;
+  border-radius: 10px;
+  padding: 15px;
+  width: 100%;
+  margin: 10px 0px;
 }

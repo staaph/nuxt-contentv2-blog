@@ -5,7 +5,7 @@ description: 'meta description of the page'
 
 ### About Content v2
 
-```javascript
+```js
 export default () => {
   console.log('Code block');
 };

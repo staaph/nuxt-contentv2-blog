@@ -16,12 +16,6 @@ const { data: articles } = await useAsyncData('articles', () =>
 </template>
 
 <style scoped>
-.title {
-  font-weight: 700;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-bottom: 50px;
-}
-
 .test {
   display: flex;
   flex-direction: column;
