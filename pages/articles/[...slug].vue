@@ -9,6 +9,6 @@ const { data: article } = await useAsyncData(`article-${slug}`, () =>
 
 <template>
   <div class="">
-    <ContentRenderer :value="article" />
+    <Card :article="article" />
   </div>
 </template>

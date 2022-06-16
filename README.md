@@ -1,6 +1,6 @@
-# Content v2 Minimal Starter
+# Nuxt Blog using Content v2
 
-Look at the [Content documentation](https://content-v2.nuxtjs.org/) to learn more.
+Create your own Blog publishing markdown to github
 
 ## Setup
 

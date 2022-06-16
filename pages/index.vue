@@ -14,10 +14,6 @@ const { data: articles } = await useAsyncData('articles', () =>
 </template>
 
 <style scoped>
-* {
-  margin: 0;
-  padding: 0;
-}
 .main {
   display: flex;
   flex-direction: column;
