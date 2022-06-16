@@ -5,21 +5,15 @@ const { data: articles } = await useAsyncData('articles', () =>
 </script>
 
 <template>
-  <main class="test">
+  <Navbar />
+  <main class="content">
     <h1 class="title">Discover fascinating stories</h1>
-    <div v-for="article in articles" :key="article._id" class="grid">
-      <NuxtLink :to="article._path"
+    <div v-for="article in articles" :key="article._id" class="mx-[5%]">
+      <NuxtLink
+        :to="article._path"
+        class="m-2 w-full flex justify-center items-center"
         ><Card>{{ article.title }}</Card>
       </NuxtLink>
     </div>
   </main>
 </template>
-
-<style scoped>
-.test {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-</style>
