@@ -3,4 +3,3 @@ const config = {
   bg_light: '#fff',
 };
 
-export default config;

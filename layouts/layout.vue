@@ -1,10 +1,3 @@
-<template>
-  <main class="main">
-    <Navbar />
-    <slot />
-  </main>
-</template>
-
 <script setup lang="ts">
 useHead({
   title: 'Content Blog',
@@ -14,8 +7,15 @@ useHead({
 });
 </script>
 
+<template>
+  <main class="main">
+    <Navbar />
+    <slot />
+  </main>
+</template>
+
 <style scoped>
 .main {
-  @apply dark:bg-black min-h-screen w-screen pb-10 md:pb-0;
+  @apply dark:bg-black transition-all duration-1000 min-h-screen w-screen;
 }
 </style>

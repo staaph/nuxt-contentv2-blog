@@ -1,9 +1,9 @@
 <template>
   <nav class="p-4 justify-between flex flex-row">
     <section>
-      <NuxtLink to="/"><IconsHome /></NuxtLink>
+      <NuxtLink to="/"><IconsHome class="icon" /></NuxtLink>
     </section>
-    <section class="">
+    <section class="icon">
       <button
         v-if="$colorMode.preference == 'light'"
         @click="$colorMode.preference = 'dark'"
@@ -19,3 +19,9 @@
     </section>
   </nav>
 </template>
+
+<style scoped>
+.icon {
+  @apply text-black dark:text-white;
+}
+</style>

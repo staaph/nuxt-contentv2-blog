@@ -8,19 +8,18 @@ useHead({
 </script>
 
 <template>
-  <main class="content flex flex-col justify-center">
+  <main class="content flex flex-col justify-center items-center">
     <h1 class="title">Discover fascinating stories</h1>
-    <section class="flex flex-col gap-5" v-if="articles">
+    <section class="flex flex-col gap-5 w-full md:w-2/3" v-if="articles">
       <div v-for="(article, key) in articles" :key="article.id">
         <NuxtLink :to="article._path">
-          <div class="flex flex-row gap-x-3">
+          <div class="card">
             <div
               v-text="'0' + (key + 1)"
-              class="font-bold text-3xl text-gray-400"
+              class="font-bold text-3xl text-gray-400 dark:text-gray-400"
             />
-            <div class="flex flex-col dark:text-white">
-              <span v-text="article.title" class="font-semibold" />
-              <div class="flex flex-row gap-x-2 font-light"></div>
+            <div class="flex flex-col">
+              <p v-text="article.title" class="font-semibold" />
             </div>
           </div>
         </NuxtLink>
@@ -30,11 +29,7 @@ useHead({
 </template>
 
 <style scoped>
-.link {
-  display: flex;
-  margin: 0.5rem;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+.card {
+  @apply dark:text-black dark:hover:text-white flex flex-row gap-x-3 bg-gray-100 p-2 rounded hover:scale-105 hover:bg-gray-900/25 transition-all duration-500 items-center dark:hover:bg-gray-600/50;
 }
 </style>
