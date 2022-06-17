@@ -16,6 +16,6 @@ useHead({
 
 <style scoped>
 .main {
-  @apply dark:bg-black transition-all duration-1000 min-h-screen w-screen;
+  @apply bg-light dark:bg-dark transition-all duration-1000 min-h-screen w-screen;
 }
 </style>
