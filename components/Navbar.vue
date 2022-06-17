@@ -7,12 +7,12 @@ const { toggleTheme, userTheme } = useDark();
     <section>
       <NuxtLink to="/"><IconsHome class="icon" /></NuxtLink>
     </section>
-    <section class="icon">
+    <section>
       <button v-if="userTheme == 'light'" @click="toggleTheme()">
-        <IconsMoon />
+        <IconsMoon class="icon" />
       </button>
       <button v-if="userTheme == 'dark'" @click="toggleTheme()">
-        <IconsSun />
+        <IconsSun class="icon" />
       </button>
     </section>
   </nav>
