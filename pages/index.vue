@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { config } from '@/config';
-
 const { data: articles } = await useAsyncData('articles', () =>
   queryContent('/articles').find()
 );
@@ -11,7 +9,7 @@ useHead({
 
 <template>
   <main class="content flex flex-col justify-center items-center">
-    <h1 class="title">{{ config.header }}</h1>
+    <h1 class="title">Discover fascinating stories</h1>
     <section class="flex flex-col gap-5 w-full md:w-2/3" v-if="articles">
       <div v-for="(article, key) in articles" :key="article.id">
         <NuxtLink :to="article._path">
