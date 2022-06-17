@@ -21,7 +21,7 @@ pre {
   padding: 0.5rem;
   background-color: #1f2937;
   border-radius: 0.25rem;
-  @apply overflow-scroll;
+  @apply overflow-auto;
 }
 
 a {
