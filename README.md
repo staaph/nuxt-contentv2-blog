@@ -1,6 +1,8 @@
 # Nuxt Blog using Content v2
 
-Create your own Blog publishing markdown to github
+Create your own Blog publishing markdown to github.
+Just push markdown into /content/articles/
+configure colors and styles in config file (work in progress)
 
 ## Setup
 
