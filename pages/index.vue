@@ -30,6 +30,6 @@ useHead({
 
 <style scoped>
 .card {
-  @apply dark:text-black dark:hover:text-white flex flex-row gap-x-3 bg-gray-100 p-2 rounded hover:scale-105 hover:bg-gray-900/25 transition-all duration-500 items-center dark:hover:bg-gray-600/50;
+  @apply dark:text-black dark:hover:text-white flex flex-row gap-x-3 bg-gray-100 p-2 rounded hover:scale-[103%] hover:bg-gray-900/25 transition-all duration-500 items-center dark:hover:bg-gray-600/50;
 }
 </style>
