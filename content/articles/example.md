@@ -5,8 +5,8 @@ description: 'meta description of the page'
 
 ## About Content v2
 
-```ts
-const md: string = 'See markdown in action';
+```js
+const md = 'See markdown in action';
 ```
 
 # h1 Heading
