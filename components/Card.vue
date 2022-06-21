@@ -1,9 +1,3 @@
-<script setup lang="ts">
-const props = defineProps({
-  article: Object
-})
-</script>
-
 <template>
   <main class="card">
     <slot />

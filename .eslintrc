@@ -1,3 +1,4 @@
 {
-  "extends": ["@nuxtjs/eslint-config-typescript", "plugin:nuxt/recommended"]
+  "extends": ["@nuxtjs/eslint-config-typescript", "plugin:nuxt/recommended"],
+  "rules": { "vue/multi-word-component-names": 0 }
 }
