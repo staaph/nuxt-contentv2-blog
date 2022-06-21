@@ -1,15 +1,15 @@
 <script setup lang="ts">
 const {
-  params: { slug },
-} = useRoute();
+  params: { slug }
+} = useRoute()
 
 const { data: article } = await useAsyncData(`article-${slug}`, () =>
   queryContent(`/articles/${slug}`).findOne()
-);
+)
 
 useHead({
-  title: article.value.title,
-});
+  title: article.value.title
+})
 </script>
 
 <template>

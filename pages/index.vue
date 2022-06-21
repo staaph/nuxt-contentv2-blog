@@ -1,25 +1,27 @@
 <script setup lang="ts">
 const { data: articles } = await useAsyncData('articles', () =>
   queryContent('/articles').find()
-);
+)
 useHead({
-  title: 'Home',
-});
+  title: 'Home'
+})
 </script>
 
 <template>
   <main class="content flex flex-col justify-center items-center">
-    <h1 class="title">Discover fascinating stories</h1>
-    <section class="flex flex-col gap-5 w-full md:w-2/3" v-if="articles">
+    <h1 class="title">
+      Discover fascinating stories
+    </h1>
+    <section v-if="articles" class="flex flex-col gap-5 w-full md:w-2/3">
       <div v-for="(article, key) in articles" :key="article.id">
         <NuxtLink :to="article._path">
           <div class="card">
             <div
-              v-text="'0' + (key + 1)"
               class="font-bold text-3xl text-gray-400 dark:text-gray-400"
+              v-text="'0' + (key + 1)"
             />
             <div class="flex flex-col">
-              <p v-text="article.title" class="font-semibold" />
+              <p class="font-semibold" v-text="article.title" />
             </div>
           </div>
         </NuxtLink>

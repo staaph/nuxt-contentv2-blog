@@ -1,41 +1,41 @@
-import { ref, type Ref, onMounted } from 'vue';
+import { ref, type Ref, onMounted } from 'vue'
 
 export const useDark = () => {
-  const userTheme: Ref<string> = ref('dark');
+  const userTheme: Ref<string> = ref('dark')
   const setTheme = (theme: string) => {
-    localStorage.setItem('theme', theme);
-    userTheme.value = theme;
-    document.documentElement.className = theme;
-  };
+    localStorage.setItem('theme', theme)
+    userTheme.value = theme
+    document.documentElement.className = theme
+  }
 
   const getTheme = () => {
-    return localStorage.getItem('theme');
-  };
+    return localStorage.getItem('theme')
+  }
 
   const getMediaPreference = () => {
     const hasDarkPreference = window.matchMedia(
       '(prefers-color-scheme: dark)'
-    ).matches;
+    ).matches
     if (hasDarkPreference) {
-      return 'dark';
+      return 'dark'
     } else {
-      return 'light';
+      return 'light'
     }
-  };
+  }
 
   const toggleTheme = () => {
-    const activeTheme = localStorage.getItem('theme');
+    const activeTheme = localStorage.getItem('theme')
     if (activeTheme === 'light') {
-      setTheme('dark');
+      setTheme('dark')
     } else {
-      setTheme('light');
+      setTheme('light')
     }
-  };
+  }
 
   onMounted(() => {
-    const initUserTheme = getTheme() || getMediaPreference();
-    setTheme(initUserTheme);
-  });
+    const initUserTheme = getTheme() || getMediaPreference()
+    setTheme(initUserTheme)
+  })
 
-  return { toggleTheme, userTheme };
-};
+  return { toggleTheme, userTheme }
+}
