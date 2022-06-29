@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 * {
-  @apply p-0 m-0;
+  @apply  p-0 m-0;
 }
 html {
   font-family: Arial, Helvetica, sans-serif;
