@@ -23,7 +23,7 @@ pre {
   padding: 0.5rem;
   background-color: #1f2937;
   border-radius: 0.25rem;
-  @apply w-full overflow-auto;
+  @apply w-full my-4 overflow-auto;
 }
 
 a {
