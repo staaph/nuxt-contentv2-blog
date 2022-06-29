@@ -1,5 +1,5 @@
 <template>
-  <main class="grid h-screen place-content-center dark:text-white">
+  <main class="grid h-full place-content-center dark:text-white">
     <h1 class="text-3xl font-medium">404</h1>
     <p>The page you are looking for cannot be found</p>
     <div class="grid p-2 place-content-center">

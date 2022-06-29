@@ -15,6 +15,6 @@ useHead({
 
 <style scoped>
 .main {
-  @apply min-h-screen;
+  @apply min-h-screen h-screen;
 }
 </style>
